@@ -52,7 +52,6 @@ background-color: var(--white-background);
    
     padding: 0 15px;
     margin: 0 auto;
-    padding: 32px 0;
     width: 1158px;
    
 }
@@ -157,13 +156,14 @@ color: var(--presse-state);
 /* Section 1 */
 
 .section {
-    background-color: var(--hero-background);
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/img-name.jpeg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-color: var(--hero-background);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people/people.jpg);
+   
     
 }
 
@@ -175,8 +175,8 @@ color: var(--presse-state);
     color: var(--white-background);
     max-width: 496px;
     margin-left: auto;
-    margin-right: auto
-    
+    margin-right: auto;
+    margin-bottom: 48px;
 
 }
 .button{
@@ -214,7 +214,7 @@ background-color: var(--presse-state);
     background-color: #f4f4fd;
     border-radius: 4px;
     margin-bottom: 8px;
-
+    
 
 }
 
@@ -363,6 +363,7 @@ background-color: var(--presse-state);
     line-height: 1.1;
     color: var(--modal-overlay);
     margin-bottom: 72px;
+    text-align: center;
 }
 .customers-link{
     width: 100%;
@@ -378,10 +379,13 @@ background-color: var(--presse-state);
 .customers-link:hover {
     border-color: #404bbf;
     color: #404bbf;
+    
 }
 .customers-link:focus {
     border-color: #404bbf;
     color: #404bbf;
+    
+    
 
 }
 .customers-svg{
@@ -626,4 +630,3 @@ margin-right: 120px;
 
 
 }
-
