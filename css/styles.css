@@ -132,12 +132,20 @@ span {
     padding: 24px 0;
     display: block;
     transition: color var(--anim-fast);
+    position: relative;
 
    
 }
-.nav-link:hover {
 
-color: var(--presse-state);
+.nav-link:hover::after {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 4px;
+    background-color: var(--presse-state);
+    border-radius: 2px;
+    left: 0px;
+    top: 44px;
 }
 .nav-link:focus {
 
