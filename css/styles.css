@@ -699,13 +699,20 @@ overflow: hidden;
 
 
 .backdrop{
-    position: absolute;
+    position: fixed;
     left: 0px;
     z-index: var(--header-idx);
     top: 0px;
     right: 0px;
     bottom: 0px;
     background: rgba(46, 47, 66, 0.4);
+
+}
+.backdrop.is-hidden{
+    visibility:hidden;
+    opacity:0;
+    pointer-events:none;
+
 
 }
 
@@ -769,7 +776,7 @@ overflow: hidden;
     border-radius: 50%;
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    
+    box-sizing: border-box;
     
 
 
@@ -778,7 +785,6 @@ overflow: hidden;
 }
 .modal-icons{
     
-
    width: 8px;
    height: 8px;
    left: 8px;
@@ -789,4 +795,5 @@ overflow: hidden;
 .modal-button :hover
 .modal-button :hover {
 
+    
 }
