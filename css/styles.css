@@ -332,6 +332,7 @@ background-color: var(--presse-state);
     letter-spacing: 0.02em;
     color: var(--text);
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .ellipse {
@@ -659,6 +660,9 @@ margin-right: 120px;
     margin: 0;
 }
 
+/*overlav*/
+
+
 .overlav{
     position: absolute;
     width: 100%;
@@ -666,12 +670,12 @@ margin-right: 120px;
     left: 0px;
     top: 0px;
 
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: #F4F4FD;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #F4F4FD;
 
     background: #4D5AE5;
     
@@ -693,6 +697,10 @@ overflow: hidden;
 }
 
 .portfolio-list:hover .overlav {
+    transform: translate(0, 0);
+
+}
+.portfolio-list:focus .overlav {
     transform: translate(0, 0);
 
 }
@@ -770,7 +778,8 @@ overflow: hidden;
 
 }
 .modal-button{
-    display: block;
+    display: flex;
+    padding: 8px;
     position: absolute;
     margin-left: auto;
     top: 24px;
@@ -795,15 +804,15 @@ overflow: hidden;
     bottom: 8px;
 }
 .modal-button :hover{
-background: #FCFCFC;
+    background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border-radius: 100%;
 
 }
 
 .modal-button :focus {
 
     background: #FCFCFC;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
 }
