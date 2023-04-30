@@ -178,7 +178,7 @@ span {
 
 .section {
     padding: 188px 0;
-    max-width: 1440px;
+    max-width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
