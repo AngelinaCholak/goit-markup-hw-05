@@ -61,7 +61,6 @@ background-color: var(--white-background);
     width: 1158px;
    
 }
- /*width: 1158px;*/
 
 ul {
 
@@ -185,7 +184,7 @@ span {
     background-size: cover;
     background-color: var(--hero-background);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people/people.jpg);
-    
+   
     
 }
 
@@ -760,6 +759,7 @@ overflow: hidden;
     box-sizing: border-box;
     cursor: pointer;
     transition-property: background-color;
+    transition: background-color var(--presse-state);color: var(--color);;
     color: var(--hero-background);
     }
     
@@ -775,7 +775,7 @@ overflow: hidden;
 
 .modal-button :hover{
     color: var(--color);
-    background: var(--presse-state);
+    background-color: var(--presse-state);
     
     
     
@@ -787,6 +787,6 @@ overflow: hidden;
 
 .modal-button :focus {
     color: var(--color);
-    background: var(--presse-state);
+    background-color: var(--presse-state);
     
 }
