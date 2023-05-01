@@ -721,7 +721,7 @@ overflow: hidden;
     bottom: 0px;
     background: rgba(46, 47, 66, 0.4);
     transition-property: visibility, opacity;
-    transition-duration: 250ms;
+    transition-duration: var(--anim-fast);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -764,14 +764,16 @@ overflow: hidden;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
     cursor: pointer;
-    transition-property: background-color;
+    transition-property: background-color,;
     transition: background-color var(--presse-state);color: var(--color);;
     color: var(--hero-background);
     
+    transition-property: visibility, opacity;
+        transition-duration: var(--anim-fast);
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
     }
     
-    
-
 
 .modal-icons{
     
@@ -780,7 +782,7 @@ overflow: hidden;
     fill: currentColor;
 }
 
-.modal-button:hover{
+.modal-button:hover {
     color: var(--color);
     background-color: var(--presse-state);
     
